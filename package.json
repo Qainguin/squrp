@@ -1,0 +1,40 @@
+{
+  "name": "squrp",
+  "version": "1.0.0",
+  "description": "Quickly zip and unzip file maps using CompressionStream API",
+  "main": "index.js",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.js"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir . --format esm --target browser",
+    "typecheck": "tsc --noEmit",
+    "declarations": "tsc",
+    "test": "bun test",
+    "lint": "biome check --write --unsafe .",
+    "benchmark": "bun run benchmark.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@biomejs/biome": "latest",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "keywords": [
+    "zip",
+    "unzip",
+    "compression",
+    "browser",
+    "compression-stream"
+  ],
+  "license": "MIT"
+}
