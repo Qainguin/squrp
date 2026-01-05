@@ -1,6 +1,6 @@
 {
   "name": "squrp",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Quickly zip and unzip file maps using CompressionStream API",
   "main": "index.js",
   "module": "index.js",
